@@ -50,3 +50,30 @@ header{
     margin-bottom: 1rem;
     opacity: 0.9;
 }
+/*CONTAINER DE CATEGORIAS*/
+.container-categorias{
+    display: flex;
+    gap: 2rem;
+    padding: 3rem 5%;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+/*ESTILIZAÇÃO DOS CARDS*/
+.card-categoria{
+    background: var(--branco-ceep);
+    border-radius: 12px;
+    padding: 2rem;
+    flex: 1;
+    min-width: 300px;
+    max-width: 500px;
+    text-align: center;
+    transition: transform 0.3s ease;
+    border-bottom: 8px solid var(--vermelho-ceep);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+.card-categoria.subsequente{
+    border-color: var(--amarelo-ceep);
+}
+.card-categoria:hover{
+    transform: translateY(-10px);
+}
